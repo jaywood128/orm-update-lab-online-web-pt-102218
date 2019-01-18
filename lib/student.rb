@@ -53,9 +53,9 @@ class Student
 
     sql = <<-SQL
           SELECT *
-          FROM students 
+          FROM students
           WHERE name = ?
-            SQL 
+            SQL
       DB[:conn].execute(sql, self.name)
 
   end
