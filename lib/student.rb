@@ -67,5 +67,6 @@ class Student
     DB[:conn].execute(sql, self.name, self.grade).map do |row|
       student = self.new(row)
       student
+    end
   end
 end
