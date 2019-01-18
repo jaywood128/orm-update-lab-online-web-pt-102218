@@ -24,9 +24,9 @@ class Student
 
   def self.drop_table
 
-    sql <<-SQL 
-      DROP TABLE IF EXISTS 
-      WHERE table.name = students 
+    sql <<-SQL
+      DROP TABLE IF EXISTS
+      WHERE table.name = students
       SQL
     DB[:conn].execute(sql)
   end
