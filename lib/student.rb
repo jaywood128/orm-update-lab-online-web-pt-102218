@@ -62,7 +62,7 @@ class Student
 
   def self.create(name, grade)
     sql = <<-SQL INSERT INTO students (name, grade, id)
-            VALUES (?,?)
+            VALUES (?,?,?)
             SQL
     DB[:conn].execute(sql, self.name, self.grade, self.id).map do |row|
       student = self.new(row)
