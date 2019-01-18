@@ -78,4 +78,3 @@ class Student
     new_student
   end
 end
-
