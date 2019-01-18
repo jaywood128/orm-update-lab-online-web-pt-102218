@@ -24,7 +24,7 @@ class Student
 
   def self.drop_table
 
-    sql <<-SQL
+    sql = <<-SQL
       DROP TABLE IF EXISTS
       WHERE name = students;
 
