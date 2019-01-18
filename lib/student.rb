@@ -77,3 +77,4 @@ class Student
     new_student = self.new(row[1], row[2], row[0])
     new_student
   end
+end
