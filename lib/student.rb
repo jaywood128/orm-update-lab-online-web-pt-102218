@@ -26,7 +26,7 @@ class Student
 
     sql <<-SQL
       DROP TABLE IF EXISTS
-      WHERE table.name = students;
+      WHERE name = students;
 
       SQL
     DB[:conn].execute(sql)
